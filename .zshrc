@@ -56,10 +56,12 @@ case "${OSTYPE}" in
     alias ls="ls --color"
     ;;
 esac
-cd
 #source $HOME/.cargo/env
 
 # rbenv
 export PATH="$HOME/.rbenv/bin:$PATH"
 eval "$(rbenv init -)"
 
+export PATH=$PATH:/Users/iaia/Library/Android/sdk/platform-tools/
+export PATH="/usr/local/opt/mysql@5.6/bin:$PATH"
+export PATH="/usr/local/opt/imagemagick@6/bin:$PATH"
